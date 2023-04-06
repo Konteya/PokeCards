@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- local css -->
+     <link rel="stylesheet" href="types.css">
+    <title>PokeCards</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
+            <div class="container-fluid align-content-center ">
+               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+               </button>
+               <a class="navbar-brand" href="index.html" target="_blank"><img src="photos/logo-removebg-preview.png" width="40px" height="40px"></a>
+               <span class="heading" style="color: #C3C8CC; font-size: large; font-weight: 500;">GB</span>             
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="mx-auto d-block">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                     
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pokemons
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="psychic.html">Psychic</a></li>
+                        <li><a class="dropdown-item" href="ground.html">Ground</a></li>
+                        <li><a class="dropdown-item" href="electric.html">Electric</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Find Many More</a></li>
+                      </ul>
+                    </li>  
+                  </ul>
+                </div>
+               
+              <div class="float-right">              
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="menuBtn">Menu</a>
+                  </li>
+                </ul>
+              </div>
+                                
+            </div>
+        </nav>
+   </div>
+
+    <div class="container content">
+        <div class="row align-items-center">
+            <div class="back">
+                <a href="#" onclick="history.back()">&#8592;&nbsp;&nbsp;back</a>
+            </div>
+            <div class="col-12 col-sm-4  d-flex justify-content-center align-items-center">
+                <div class="item">
+                  <div class="card text-center" style="width: 18rem;">
+                  <img class="card-img-top" src="photos/Pidgey.png" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">Pidgey</h5>
+                      <p class="card-text text-center">Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.</p>
+                  </div>
+                  <div class="card-body buy">
+                      <a href="pidgey.html" class="card-link catch">Catch!</a>
+                  </div>                            
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4  d-flex justify-content-center align-items-center">
+                <div class="item">
+                  <div class="card text-center" style="width: 18rem;">
+                  <img class="card-img-top" src="photos/Meowth.png" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">Meowth</h5>
+                      <p class="card-text text-center">It loves to collect shiny things. It might even let its Trainer have a look at its hoard of treasures.</p>
+                  </div>
+                  <div class="card-body buy">
+                      <a href="meowth.html" class="card-link catch">Catch!</a>
+                  </div>                            
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4  d-flex justify-content-center align-items-center">
+              <div class="item">
+                <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="photos/Arceus.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Arceus</h5>
+                    <p class="card-text text-center">According to the legends of Sinnoh, it emerged from an egg and shaped all there is in this world.</p>
+                </div>
+                <div class="card-body buy">
+                    <a href="arceus.html" class="card-link catch">Catch!</a>
+                </div>                            
+                </div>
+            </div>
+          </div>
+            
+            
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

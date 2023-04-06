@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- local css -->
+     <link rel="stylesheet" href="styles.css">
+    <title>PokeCards</title>
+</head>
+<body>
+    <div class="container-fluid">
+         <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
+             <div class="container-fluid align-content-center ">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon "></span>
+                </button>
+                <a class="navbar-brand" href="https://www.goldenbird.tech/" target="_blank"><img src="photos/logo-removebg-preview.png" width="40px" height="40px"></a>
+                <span class="heading" style="color: #C3C8CC; font-size: large; font-weight: 500;">GB</span>             
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <div class="mx-auto d-block">
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                     
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Pokemons
+                       </a>
+                       <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                         <li><a class="dropdown-item" href="psychic.html">Psychic</a></li>
+                         <li><a class="dropdown-item" href="ground.html">Ground</a></li>
+                         <li><a class="dropdown-item" href="electric.html">Electric</a></li>
+                         <li><hr class="dropdown-divider"></li>
+                         <li><a class="dropdown-item" href="#">Find Many More</a></li>
+                       </ul>
+                     </li>  
+                   </ul>
+                 </div>
+                
+               <div class="float-right">              
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  
+                   <li class="nav-item">
+                     <a class="nav-link" href="#" id="menuBtn">Menu</a>
+                   </li>
+                 </ul>
+               </div>
+                                 
+             </div>
+         </nav>
+    </div>
+
+    <section class="slideshow">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+          </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <!-- <div class="overlay-image"  style="background-image: url(photos/pikachu.png);"></div>
+                        <div class="container-fluid">
+                            <p class="text-center">Pikachu
+                                <br><br>
+                                <a href="#" class="catch">Catch!</a>
+                            </p>                       
+                        </div> -->
+                        
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
+                                    <div class="item">
+                                        <div class="card text-center" style="width: 18rem;">
+                                        <img class="card-img-top" src="photos/pikachu.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pikachu</h5>
+                                            <p class="card-text text-center">Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</p>
+                                        </div>
+                                        <div class="card-body buy">
+                                            <a href="pikachu.html" class="card-link catch">Catch!</a>
+                                        </div>                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                    <div class="item">
+                                        <div class="card text-center" style="width: 18rem;">
+                                        <img class="card-img-top" src="photos/Bulbasaur.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bulbasaur</h5>
+                                            <p class="card-text text-center">There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>
+                                        </div>
+                                        <div class="card-body buy">
+                                            <a href="bulbasaur.html" class="card-link catch">Catch!</a>
+                                        </div>                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                    <div class="item">
+                                        <div class="card text-center" style="width: 18rem;">
+                                        <img class="card-img-top" src="photos/Charmander.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Charmander</h5>
+                                            <p class="card-text text-center">It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</p>
+                                        </div>
+                                        <div class="card-body buy">
+                                            <a href="charmander.html" class="card-link catch">Catch!</a>
+                                        </div>                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>                       
+                    </div>      
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Squirtle.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Squirtle</h5>
+                                        <p class="card-text text-center">When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="squirtle.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Caterpie.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Caterpie</h5>
+                                        <p class="card-text text-center">For protection, it releases a horrible stench from the antenna on its head to drive away enemies.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="caterpie.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Beedrill.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Beedrill</h5>
+                                        <p class="card-text text-center">It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="beedrill.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-lg-4  d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Pidgey.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pidgey</h5>
+                                        <p class="card-text text-center">Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="pidgey.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Arbok.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Arbok</h5>
+                                        <p class="card-text text-center">The frightening patterns on its belly have been studied. Six variations have been confirmed.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="arbok.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Ekans.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ekans</h5>
+                                        <p class="card-text text-center">The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="ekans.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Clefairy.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Clefairy</h5>
+                                        <p class="card-text text-center">It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="clefairy.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Vulpix.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vulpix</h5>
+                                        <p class="card-text text-center">While young, it has six gorgeous tails. When it grows, several new tails are sprouted.
+                                        </p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="vulpix.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Meowth.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Meowth</h5>
+                                        <p class="card-text text-center">It loves to collect shiny things. It might even let its Trainer have a look at its hoard of treasures.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="meowth.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Psyduck.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Psyduck</h5>
+                                        <p class="card-text text-center">Psyduck is constantly beset by headaches. If strange power erupts, the pain subsides for a while.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="psyduck.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Mewtwo.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mewtwo</h5>
+                                        <p class="card-text text-center">Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="mewtwo.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/Arceus.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Arceus</h5>
+                                        <p class="card-text text-center">According to the legends of Sinnoh, it emerged from an egg and shaped all there is in this world.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="arceus.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+
+                <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>    
+
+    <section class="mobile-slideshow">
+        <div id="myCarousel-1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">               
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 d-flex justify-content-center align-items-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                      <img class="card-img-top" src="photos/psychic-removebg-preview.png" alt="Card image cap">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Psychic</h5>
+                                        <p class="card-text text-center">Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</p>
+                                      </div>
+                                      <div class="card-body buy">
+                                        <a href="psychic.html" class="card-link catch">Catch!</a>
+                                     </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>      
+              
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/ground-removebg-preview.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ground</h5>
+                                        <p class="card-text text-center">When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="ground.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+            
+              <div class="carousel-item">
+                <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/flying-removebg-preview.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flying</h5>
+                                        <p class="card-text text-center">Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="flying.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="item">
+                                    <div class="card text-center" style="width: 18rem;">
+                                    <img class="card-img-top" src="photos/electric-removebg-preview.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Electric</h5>
+                                        <p class="card-text text-center">It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.</p>
+                                    </div>
+                                    <div class="card-body buy">
+                                        <a href="electric.html" class="card-link catch">Catch!</a>
+                                    </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="item">
+                                <div class="card text-center" style="width: 18rem;">
+                                  <img class="card-img-top" src="photos/fighting-removebg-preview.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Fighting</h5>
+                                    <p class="card-text text-center">Psyduck is constantly beset by headaches. If strange power erupts, the pain subsides for a while.</p>
+                                  </div>
+                                  <div class="card-body buy">
+                                    <a href="fighting.html" class="card-link catch">Catch!</a>
+                                 </div>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            
+
+          <a href="#myCarousel-1" class="carousel-control-prev" role="button" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a href="#myCarousel-1" class="carousel-control-next" role="button" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+        </div>
+        
+    </section>    
+
+
+
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
